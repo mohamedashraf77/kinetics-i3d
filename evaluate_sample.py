@@ -27,20 +27,20 @@ _IMAGE_SIZE = 224
 
 _SAMPLE_VIDEO_FRAMES = 79
 _SAMPLE_PATHS = {
-    'rgb': 'data/v_CricketShot_g04_c01_rgb.npy',
-    'flow': 'data/v_CricketShot_g04_c01_flow.npy',
+    'rgb': '/content/kinetics-i3d/data/v_CricketShot_g04_c01_rgb.npy',
+    'flow': '/content/kinetics-i3d/data/v_CricketShot_g04_c01_flow.npy',
 }
 
 _CHECKPOINT_PATHS = {
-    'rgb': 'data/checkpoints/rgb_scratch/model.ckpt',
-    'rgb600': 'data/checkpoints/rgb_scratch_kin600/model.ckpt',
-    'flow': 'data/checkpoints/flow_scratch/model.ckpt',
-    'rgb_imagenet': 'data/checkpoints/rgb_imagenet/model.ckpt',
-    'flow_imagenet': 'data/checkpoints/flow_imagenet/model.ckpt',
+    'rgb': '/content/kinetics-i3d/data/checkpoints/rgb_scratch/model.ckpt',
+    'rgb600': '/content/kinetics-i3d/data/checkpoints/rgb_scratch_kin600/model.ckpt',
+    'flow': '/content/kinetics-i3d/data/checkpoints/flow_scratch/model.ckpt',
+    'rgb_imagenet': '/content/kinetics-i3d/data/checkpoints/rgb_imagenet/model.ckpt',
+    'flow_imagenet': '/content/kinetics-i3d/data/checkpoints/flow_imagenet/model.ckpt',
 }
 
-_LABEL_MAP_PATH = 'data/label_map.txt'
-_LABEL_MAP_PATH_600 = 'data/label_map_600.txt'
+_LABEL_MAP_PATH = '/content/kinetics-i3d/data/label_map.txt'
+_LABEL_MAP_PATH_600 = '/content/kinetics-i3d/data/label_map_600.txt'
 
 FLAGS = tf.flags.FLAGS
 
