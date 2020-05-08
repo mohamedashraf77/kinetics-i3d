@@ -75,7 +75,7 @@ def main(unused_argv):
 
     with tf.variable_scope('RGB'):
       rgb_model = i3d.InceptionI3d(
-          NUM_CLASSES, spatial_squeeze=True, final_endpoint='Logits')
+          NUM_CLASSES, spatial_squeeze=True, final_endpoint='Predictions')
       rgb_logits, _ = rgb_model(
           rgb_input, is_training=False, dropout_keep_prob=1.0)
 
